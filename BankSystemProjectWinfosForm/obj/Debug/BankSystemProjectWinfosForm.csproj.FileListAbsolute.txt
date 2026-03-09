@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\bin\Debug\BankSystemProjectWinfosForm.exe.config
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\bin\Debug\BankSystemProjectWinfosForm.exe
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\bin\Debug\BankSystemProjectWinfosForm.pdb
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\obj\Debug\BankSystemProjectWinfosForm.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\obj\Debug\BankSystemProjectWinfosForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\obj\Debug\BankSystemProjectWinfosForm.Properties.Resources.resources
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\obj\Debug\BankSystemProjectWinfosForm.csproj.GenerateResource.cache
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\obj\Debug\BankSystemProjectWinfosForm.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\obj\Debug\BankSystemProjectWinfosForm.exe
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\obj\Debug\BankSystemProjectWinfosForm.pdb
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\bin\Debug\BankBuisnessLayer.dll
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\bin\Debug\BankDataAccessLayer.dll
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\bin\Debug\BankBuisnessLayer.pdb
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\bin\Debug\BankDataAccessLayer.pdb
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\obj\Debug\BankSystemProjectWinfosForm.Form1.resources
+C:\Users\hp\Desktop\BankProject\BankSystemProjectWinfosForm\obj\Debug\BankSystemProjectWinfosForm.csproj.CopyComplete

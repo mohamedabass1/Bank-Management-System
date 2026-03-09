@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F943035-0A70-4060-ABB9-2304DAB3DB65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BankSystemProjectWinfosForm</RootNamespace>
+    <AssemblyName>BankSystemProjectWinfosForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Downloads\Guna.UI_x86\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\Downloads\Guna.UI2.WinForms.2.0.4.6\lib\net461\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsGolobalCurrentUser.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginRegisters\frmLoginRegistersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginRegisters\frmLoginRegistersList.Designer.cs">
+      <DependentUpon>frmLoginRegistersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Transactions Screen\frmDepsitScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Transactions Screen\frmDepsitScreen.Designer.cs">
+      <DependentUpon>frmDepsitScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Transactions Screen\frmManageTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Transactions Screen\frmManageTransactions.Designer.cs">
+      <DependentUpon>frmManageTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Transactions Screen\frmTotalBlances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Transactions Screen\frmTotalBlances.Designer.cs">
+      <DependentUpon>frmTotalBlances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Transactions Screen\frmTransferScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Transactions Screen\frmTransferScreen.Designer.cs">
+      <DependentUpon>frmTransferScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Transactions Screen\frmTransfersLogScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Transactions Screen\frmTransfersLogScreen.Designer.cs">
+      <DependentUpon>frmTransfersLogScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Transactions Screen\WithdrawScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Transactions Screen\WithdrawScreen.Designer.cs">
+      <DependentUpon>WithdrawScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Users Screens\frmAddNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Users Screens\frmAddNewUser.Designer.cs">
+      <DependentUpon>frmAddNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Users Screens\frmDeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Users Screens\frmDeleteUser.Designer.cs">
+      <DependentUpon>frmDeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Users Screens\frmFindUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Users Screens\frmFindUser.Designer.cs">
+      <DependentUpon>frmFindUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Users Screens\frmManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Users Screens\frmManageUsers.Designer.cs">
+      <DependentUpon>frmManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Users Screens\frmUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Users Screens\frmUpdateUser.Designer.cs">
+      <DependentUpon>frmUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Users Screens\frmUsersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Users Screens\frmUsersList.Designer.cs">
+      <DependentUpon>frmUsersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Accounts Screens\frmAccountsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Accounts Screens\frmAccountsList.Designer.cs">
+      <DependentUpon>frmAccountsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Accounts Screens\frmAddNewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Accounts Screens\frmAddNewAccount.Designer.cs">
+      <DependentUpon>frmAddNewAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Accounts Screens\frmDeleteAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Accounts Screens\frmDeleteAccount.Designer.cs">
+      <DependentUpon>frmDeleteAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Accounts Screens\frmFindAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Accounts Screens\frmFindAccount.Designer.cs">
+      <DependentUpon>frmFindAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Accounts Screens\frmUpdateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Accounts Screens\frmUpdateAccount.Designer.cs">
+      <DependentUpon>frmUpdateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Clients Screens\frmAddNewClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Clients Screens\frmAddNewClient.Designer.cs">
+      <DependentUpon>frmAddNewClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Clients Screens\frmClientsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Clients Screens\frmClientsList.Designer.cs">
+      <DependentUpon>frmClientsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Clients Screens\frmDeleteClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Clients Screens\frmDeleteClient.Designer.cs">
+      <DependentUpon>frmDeleteClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Clients Screens\frmFindClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Clients Screens\frmFindClient.Designer.cs">
+      <DependentUpon>frmFindClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Accounts Screens\frmManageAaccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Accounts Screens\frmManageAaccounts.Designer.cs">
+      <DependentUpon>frmManageAaccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Clients Screens\frmManageClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Clients Screens\frmManageClients.Designer.cs">
+      <DependentUpon>frmManageClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Clients Screens\frmUpdateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Clients Screens\frmUpdateClient.Designer.cs">
+      <DependentUpon>frmUpdateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginRegisters\frmLoginRegistersList.resx">
+      <DependentUpon>frmLoginRegistersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Transactions Screen\frmDepsitScreen.resx">
+      <DependentUpon>frmDepsitScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Transactions Screen\frmManageTransactions.resx">
+      <DependentUpon>frmManageTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Transactions Screen\frmTotalBlances.resx">
+      <DependentUpon>frmTotalBlances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Transactions Screen\frmTransferScreen.resx">
+      <DependentUpon>frmTransferScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Transactions Screen\frmTransfersLogScreen.resx">
+      <DependentUpon>frmTransfersLogScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Transactions Screen\WithdrawScreen.resx">
+      <DependentUpon>WithdrawScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Users Screens\frmAddNewUser.resx">
+      <DependentUpon>frmAddNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Users Screens\frmDeleteUser.resx">
+      <DependentUpon>frmDeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Users Screens\frmFindUser.resx">
+      <DependentUpon>frmFindUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Users Screens\frmManageUsers.resx">
+      <DependentUpon>frmManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Users Screens\frmUpdateUser.resx">
+      <DependentUpon>frmUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Users Screens\frmUsersList.resx">
+      <DependentUpon>frmUsersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Accounts Screens\frmAccountsList.resx">
+      <DependentUpon>frmAccountsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Accounts Screens\frmAddNewAccount.resx">
+      <DependentUpon>frmAddNewAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Accounts Screens\frmDeleteAccount.resx">
+      <DependentUpon>frmDeleteAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Accounts Screens\frmFindAccount.resx">
+      <DependentUpon>frmFindAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Accounts Screens\frmUpdateAccount.resx">
+      <DependentUpon>frmUpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Clients Screens\frmAddNewClient.resx">
+      <DependentUpon>frmAddNewClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Clients Screens\frmClientsList.resx">
+      <DependentUpon>frmClientsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Clients Screens\frmDeleteClient.resx">
+      <DependentUpon>frmDeleteClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Clients Screens\frmFindClient.resx">
+      <DependentUpon>frmFindClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Accounts Screens\frmManageAaccounts.resx">
+      <DependentUpon>frmManageAaccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Clients Screens\frmManageClients.resx">
+      <DependentUpon>frmManageClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Clients Screens\frmUpdateClient.resx">
+      <DependentUpon>frmUpdateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankBuisnessLayer\BankBuisnessLayer.csproj">
+      <Project>{bcf43743-d253-4884-86bb-69a47eb1356d}</Project>
+      <Name>BankBuisnessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2944641_28371.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_vault_tyfh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindClientIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteimage-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteClientIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank-management.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentProc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loggn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What-to-consider-when-choosing-a-bank.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-github-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-linkedin-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transfer-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-withdraw-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-deposit-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-history-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DepositIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WithdrawIcon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
